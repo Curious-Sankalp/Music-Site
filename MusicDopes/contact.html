@@ -1,0 +1,136 @@
+a<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Global Styles */
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+      
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          color: #333;
+          background-color: #000000;
+        }
+      
+        /* Header Styles */
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 1em;
+          text-align: center;
+        }
+      
+        .logo {
+          display: inline-block;
+          margin-right: 1em;
+          height: 50px;
+          width: 50px;
+        }
+      
+        .logo img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      
+        /* Contact Section Styles */
+        #contact {
+          padding: 2em;
+        }
+      
+        #contact h2 {
+          margin-bottom: 1em;
+        }
+      
+        form {
+          max-width: 500px;
+          margin: 0 auto;
+          padding: 2em;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      
+        label {
+          display: block;
+          margin-bottom: 0.5em;
+        }
+      
+        input[type="text"], input[type="email"], textarea {
+          width: 100%;
+          padding: 0.5em;
+          margin-bottom: 1em;
+          border: 1px solid #ccc;
+        }
+      
+        .captcha {
+          margin-bottom: 1em;
+        }
+      
+        button[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          padding: 0.5em 1em;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        button[type="submit"]:hover {
+          background-color: #444;
+        }
+      
+        /* Footer Styles */
+        footer {
+          background-color: #333;
+          color: #fff;
+          padding: 1em;
+          text-align: center;
+          clear: both;
+        }
+        h2{
+            color: lightgreen;
+            font-size: 30px;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        
+    </header>
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" required>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="captcha">
+                <input type="checkbox" id="not-a-robot" name="not-a-robot" required>
+                <label for="not-a-robot">I'm not a robot</label>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Music Website. All rights reserved.</p>
+    </footer>
+    </body>
+    </html>
